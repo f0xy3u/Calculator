@@ -414,6 +414,8 @@ document.addEventListener(`keydown`, (e) => {
         eight()
     } else if(key == `9`) {
         nine()
+    } else if(key == `0`) {
+        zero()
     } else if(key == `+`) {
         addOperator()
     } else if(key == `-`) {
