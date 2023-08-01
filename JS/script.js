@@ -376,9 +376,6 @@ perCentButton.addEventListener("click", perCent)
 equalButton.addEventListener("click", equal)
 backspaceButton.addEventListener(`click`, backspace)
 
-
-
-
 sevenButton.addEventListener("click", seven)
 eightButton.addEventListener("click", eight)
 nineButton.addEventListener("click", nine)
@@ -390,8 +387,6 @@ twoButton.addEventListener("click", two)
 threeButton.addEventListener("click", three)
 zeroButton.addEventListener("click", zero)
 decimalButton.addEventListener("click", decimalAdder)
-        
-
 
 divideButton.addEventListener("click", divideOperator)
 multiplyButton.addEventListener("click", multiplyOperator)
@@ -402,18 +397,40 @@ addButton.addEventListener("click", addOperator)
 document.addEventListener(`keydown`, (e) => {
     key = e.key
     if (key == `1`) {
-        if (operator == ``) {
-            if(num1 == `0`) {
-                num1 = `1`
-                displayUpdater(num1)
-            } else {
-                num1 += `1`
-                displayUpdater(num1)
-            }
-        } else if (operator != ``) {
-            num2 += `1`
-            displayUpdater(num2)
-
-        } else {console.log(`Error occurred after button was clicked!`)}
+        one()
+    } else if(key == `2`) {
+        two()
+    } else if(key == `3`) {
+        three()
+    } else if(key == `4`) {
+        four()
+    } else if(key == `5`) {
+        five()
+    } else if(key == `6`) {
+        six()
+    } else if(key == `7`) {
+        seven()
+    } else if(key == `8`) {
+        eight()
+    } else if(key == `9`) {
+        nine()
+    } else if(key == `+`) {
+        addOperator()
+    } else if(key == `-`) {
+        subtractOperator()
+    } else if(key == `*`) {
+        multiplyOperator()
+    } else if(key == `/`) {
+        divideOperator()
+    } else if(key == `Backspace`) {
+        backspace()
+    } else if(key == `Delete`) {
+        AC()
+    } else if(key == `%`) {
+        perCent()
+    } else if(key == `Enter`) {
+        equal()
+    } else if(key == `,` || key == `.`) {
+        decimalAdder()
     }
 })
