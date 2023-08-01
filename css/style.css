@@ -2,10 +2,15 @@ body {
     background-color: rgb(20, 20, 20);
     color: #FFECE6;
     font-family: 'Inter', sans-serif;
+    height:95vh;
+}
+
+body>div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80%;
+    width: 100%;
 }
 
 .container {
@@ -103,4 +108,18 @@ body {
 
 .button>button:hover {
     background-color: #000e3d;
+}
+
+.absoluteBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.absoluteBottom>a {
+    font-size: 10px;
+    text-decoration: none;
+    color:rgb(121, 121, 121)
 }
